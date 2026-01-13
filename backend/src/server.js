@@ -10,7 +10,14 @@ const favouriteRoutes = require("./routes/favouriteRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://job-portal-rust-two.vercel.app/"
+  ],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // PostgreSQL connection

@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 64px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-left a {
+  color: #374151;
+  font-weight: 500;
+}
+
+.nav-left a:first-child {
+  font-weight: 700;
+  color: #2563eb;
+  font-size: 20px;
+}
+
+.nav-right button {
+  background: #ef4444;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+/* MAIN LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+/* JOB GRID */
+.job-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 24px;
+}
+
+/* FILTER PANEL */
+.sidebar {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* JOB CARD */
+.job-card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-bottom: 18px;
+  transition: 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.job-meta {
+  color: #6b7280;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.job-desc {
+  margin-top: 12px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-outline {
+  background: white;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-left: 12px;
+}
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box input,
+.form-box select,
+.form-box button {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.form-box {
+  max-width: 420px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-box input,
+.form-box select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.badge-location {
+  background: #ecfeff;
+  color: #0369a1;
+}
+
+.badge-type {
+  background: #ecfdf5;
+  color: #047857;
+}

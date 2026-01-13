@@ -13,7 +13,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://job-portal-rust-two.vercel.app/"
+    "https://job-portal-rust-two.vercel.app"
   ],
   credentials: true
 }));
